@@ -127,7 +127,7 @@ background-position-x: left;
     font-size: 2rem;
     color: var(--primary-color);
 }
-.hero-right img{
+.hero-right .astronaut{
     transform: translateY(-5%);
     transition: 0.5s ease;
    width: 30rem;
@@ -143,6 +143,44 @@ background-position-x: left;
     }
     
 }
+ .hero-right{
+position: relative;
+   }
+   .cloud1{
+position: absolute;
+right: 30rem;
+top: 1rem;
+animation: cloud1 5s infinite;
+transition: 10s linear infinate;
+width: 50rem;
+transform: translateX(5%);
+
+   }
+    @keyframes cloud1{
+    0%{
+        transform: translateX(5%);
+    }
+    50%{
+      transform: translateX(-5%);
+    }  
+}
+.cloud2{
+    position: absolute;
+    right: 5rem;
+    top: 15rem;
+    animation: cloud2 5s infinite;
+transition: 8s linear infinate;
+  transform: translateX(-10%);
+}
+ @keyframes cloud2{
+    0%{
+        transform: translateX(-10%);
+    }
+    50%{
+      transform: translateX(10%);
+    }
+}
+
 .btn{
 color: aliceblue;
 background-color: transparent;
