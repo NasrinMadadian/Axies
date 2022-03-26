@@ -20,6 +20,8 @@ body{
        --primary-color: snow;
        --secondary-color: #343444;
        --accent-color: #4C2566;
+       --border-color:rgb(212, 166, 212);
+       --sectionsbg-color:rgb(27, 25, 25);
    }
    
    header{
@@ -182,11 +184,11 @@ transition: 8s linear infinate;
 }
 
 .btn{
-color: aliceblue;
+color: var(--primary-color);
 background-color: transparent;
 padding: 2rem 3rem;
 transition: all .2s ease-in-out;
-border: 1px solid rgb(212, 166, 212);
+border: 1px solid var(--border-color);
 border-radius: 3rem;
 outline: none;
 margin-left: 1rem;
@@ -199,9 +201,9 @@ margin-left: 1rem;
 }
 .navbtn{
 margin: 1rem 2rem;
-color: aliceblue;
+color: var(--primary-color);
 background-color: transparent;
-border: 1px solid rgb(212, 166, 212);
+border: 1px solid var(--border-color);
 padding: 2rem 4rem;
 transition: all .2s ease-in-out;
 border-radius: 3rem;
@@ -237,7 +239,7 @@ transform: scale(1.2);
 }
 .herocard-icon{
     font-size: 2.5rem;
-    color: white;
+    color: var(--primary-color);
     padding: 2rem;
     margin: 3rem;
     border-radius: 1rem;
@@ -284,7 +286,7 @@ transform: skew(0deg, 15deg);
 
 }
 #liveauctions{  
-background-color: rgb(27, 25, 25);
+background-color: var(--sectionsbg-color);
 }
 .card-img{
     position: relative;
@@ -303,7 +305,7 @@ top: 40%;
    opacity: 0;
 }
 .overlay-bottom{
-background-color: rgb(27, 25, 25);
+background-color: var(--sectionsbg-color);
 position: absolute;
 top: 78%;
 left: 18%;
@@ -397,7 +399,7 @@ font-weight: 450px;
     line-height: 3rem;
 }
 .card-footer-right{
-background-color: rgb(27, 25, 25);
+background-color: var(--sectionsbg-color);
 padding: 0.4rem 1rem;
 border-radius: 0.5rem;
 }
@@ -411,7 +413,7 @@ line-height: 2rem;
 
 } 
 .product-info p{
-    color: palevioletred;
+   color: var(--primary-color);
 }
 
 #topseller {
@@ -434,11 +436,11 @@ line-height: 2rem;
     margin-right: 1rem;
 }
 .seller-check{
-    font-size: 20px;
+   font-size: 2rem;
 color: rgb(42, 42, 255);
     position: relative;
-    right: 25px;
-    top: 25px;
+    right: 2.5rem;
+    top: 2.5rem;
 
 }
 .picksbtn-wrapper{
@@ -455,7 +457,7 @@ justify-content: space-between;
 }
 @keyframes spin 
 { 100% { 
-    rotate (360deg); transform:rotate(360deg);
+    transform:rotate(360deg);
  } 
 }
 .todayspicks-card-second{
@@ -525,11 +527,12 @@ outline: none;
    .social-icon{
        margin-top: 3rem;
        justify-content: center;
+       display: flex;
    }
    .social-icon i{
        padding: 5px;
-       background-color: rgb(27, 25, 25);
-       border-radius: 3px;
+       background-color: var(--sectionsbg-color);
+       border-radius: 0.3rem;
        margin: 0.6rem;
    }
    .social-icon i:hover{
