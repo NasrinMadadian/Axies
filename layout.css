@@ -73,6 +73,28 @@ list-style: none;
 .lightmode{
     margin-right: -20px;
 }
+.vertical-social{
+       display: flex;
+       flex-direction: column;
+      justify-items: center;
+       position: fixed;
+       top: 15rem;
+      left: 0.3rem;
+       background-color: var(--secondary-color);
+       border-radius: 1rem;
+       width: 3.5rem;
+       height: 22rem;
+       border-bottom: 0.2rem solid #7653d8;
+
+   }
+   .vertical-social i{
+       margin: 1rem auto;  
+       font-size: 1.6rem;  
+   }
+   .vertical-social i:hover{
+       color: #7653d8;
+       transform: scale(1.4);
+   }
 .hero{
     display: flex;
     justify-content: space-between;
