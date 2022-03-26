@@ -62,13 +62,13 @@ list-style: none;
   cursor: auto;
 }
 
-.lightmode ,.nightmode{
+.lightmode ,.login{
     background-color: var(--secondary-color);
    padding: 1rem;
-    border-radius: 6px; 
+    border-radius: 8px; 
 }
-.nightmode{
-    padding: 1.27rem;  
+.login{
+    padding: 1.65rem;
 }
 .lightmode{
     margin-right: -20px;
